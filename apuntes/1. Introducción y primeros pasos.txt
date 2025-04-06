@@ -1,0 +1,108 @@
+NODE JS
+
+1. Introducción y primeros pasos:
+
+Node JS: Es un entorno de ejecución para Javascript, es decir, un sitio donde podes ejecutar Javascript
+Es de codigo abierto, de multiples plataformas, con una arquitectura orientada a eventos
+
+Es un modelo de programación, es basicmaente un bucle, en la cual, va ejecutando tareas mientras espera a otras
+
+¿Porqué aprender Node.js?
+1. Demanda del mercado
+2. El stack
+3. Adaptación facil a node si sabes JS
+4. Podes crear: aplicaciones web, apis, scrapping, utilidades
+5. Es rápido, escalable y fácil de desplegar
+
+Historia
+Se creo en 2009, Ryan Dal, por las limitaciones que tenia Apache y HTTP, por las dificultades que tenia en manejar muchas conexiones al mismo tiempo
+
+ - nvm -
+Lista de comandos
+nvm list
+nvm install #version#
+nvm use #version#
+ft
+Para probar en la terminal cierto arcivho:
+node index.js
+
+globalThis 
+Es una variable global en toda nuestra aplicación
+- En el navegador apunta a Window
+- En node.js apunta a global
+
+Todos los metodos por ejemplo console, fetch, Promise, lo saca de globalThis o global
+
+Vamos a utilizar un patron de diseño: 
+- Modulo
+Que consiste en separar nuestro codigo en diferentes ficheros y lo que vamos a hacer es importar y exportar para que ese codigo sea reutilizable y escalable 
+
+Sistema clasico de modulos de node js
+
+CommonJS
+- Para utilizarlo: .cjs o .js (por defecto)
+- Para exportar: module.exports
+- Para importar: const x = require('path')
+
+ES ModulesJS
+- Para utilizarlo: .mjs
+- Para exportar: export function ..
+- Para importar: import { nameFunction } from ...
+
+Modulos nativos 
+os : Para saber información del sistema operativo
+fs : Para trabajar con el sistema de archivos
+ + SINCRONO
+ Las tareas se ejecutan una tras otra, en orden.
+ - statSync : Para saber caracteristicas de los archivos
+ - readFileSync : Para leer archivos de forma sincrona
+ + ASINCRONO
+ Permite que el código siga ejecutándose sin esperar a   	que termine una tarea
+ - readFile : Para leer los archivos de forma asincrona
+ 
+ IIFE : es una funcnión invocada inmediatamente
+ 
+Gráficos 
+ - Sincrono
+ - Asíncrono callback
+ - Asíncrono secuencial
+ - Asíncrono paralelo
+ 
+Otro modulo nativo
+path : Construir nuevas rutas de archivos, saber las extensiones de los archivos, extraer extensiones, etc.
+
+Objeto process
+Es un objeto global que proporciona información y control sobre el proceso actual de ejecución
+
+npm
+node package manager
+Un administrador de paquetes de node
+También es una línea de comandos
+Es el registro (donde estan todas sus dependencias) de paquetes mas grande que existe
+
+Cuando queremos inicializar un proyecto de node
+ - npm init : te va a crear un package.json y te da una descripcion de tu proyecto con las dependencias tus scripts tu version autor etc
+ - npm init -y : te lo crea con todos los valores por defecto
+ 
+Dependencia picocolors
+npm install picocolors
+para darle estilos a la consola de la terminal en vs code
+
+Para quitar una dependenciar que instale
+uninstall #dependencia#
+
+Existen dependencias de desarrollo
+Esta dependencia te busca errores
+npm install standard -D (development)
+
+HTTP
+Procesos y conexiones
+Crear un servidor http y poder recibir requests (peticiones)
+
+NET
+Protocolo Net es mas rapido que HTTP porque no tiene que enviar tantas cabeceras
+
+
+ 
+
+
